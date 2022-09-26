@@ -30,7 +30,7 @@ class TestPasswordFiltering(unittest.TestCase):
     def test_string_name(self):
         expected_data = 'password'
         actual_data = PasswordMaskingFilter.replace_passwords_with_asterisks(expected_data)
-        self.assertEqual(actual_data, expected_data, 'Base test data should not be changed')
+        self.assertEqual(actual_data, expected_data, 'String should not be changed')
 
 
 if __name__ == '__main__':
